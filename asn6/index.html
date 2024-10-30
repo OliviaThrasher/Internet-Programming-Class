@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6</title>
+</head>
+<script src="script.js"></script>
+<body>
+    <h1>Form Assignment</h1>
+    <h3>Please Complete The Following</h3>
+    <form id="myForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br>
+            <p><b>Enter Gender:</b></p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Questions</legend>
+            <label for="Q1"> What is your favorite color?</label>
+            <input type="color" id="Q1" name="color"><br>
+            <p><b>What would you like on a pizza?</b></p><br>
+            <input type="checkbox" id="pizza1" name="pepperoni" value="PP">
+            <label for="pizza1">Pepperoni</label>
+            <input type="checkbox" id="pizza2" name="sausage" value="SS"> 
+            <label for="pizza2">Sausage</label>
+            <input type="checkbox" id="pizza3" name="ham" value="HH">
+            <label for="pizza3">Ham</label><br>
+            <label for="Q3">What is the captial of Sudan?</label>
+            <select name="Q3" id="Q3" size="4" multiple>
+                <option value="NYC">New York City</option>
+                <option value="SAB">Saab</option>
+                <option value="KAM">Khartoum</option>
+                <option value="JBA">Juba</option>
+            </select><br>
+            <p><b>What is the air-speed velocity of an unladen swallow?</b></p><br>
+            <textarea>The correct response is a question!</textarea><br>
+            <label for="file">Insert your favorite picture!</label>
+            <input type="file" id="file" name="file"> <br>
+            <label for="Q5">Rate this form from 1-5!</label>
+            <input type="range" id="Q5" name="Q5" min="1" max="5"> <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <p>Click "Try It" to display the value of the current form.</p>
+            <button type="button" onclick="myFunction()">Try It</button>
+            <h3 id="dataHeader" style="display:none">User Data Entered: </h3>
+            <p id="output"</p>
+        </fieldset>
+    </form>
+</body>
+</html>
